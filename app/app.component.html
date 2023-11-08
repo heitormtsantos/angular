@@ -1,0 +1,9 @@
+<div class="container">
+  <app-lista-desaparecidos (desaparecidosData)="onDesaparecidosDataReceived($event)"></app-lista-desaparecidos>
+  <div *ngFor="let desaparecido of desaparecidos">
+    <div>{{ desaparecido.nome }}</div>
+    <div>{{ desaparecido.idade }} anos</div>
+    <div>{{ desaparecido.sexo }}</div>
+    <img [src]="desaparecido.fotoUrl" alt="{{ desaparecido.nome }}">
+  </div>
+</div>

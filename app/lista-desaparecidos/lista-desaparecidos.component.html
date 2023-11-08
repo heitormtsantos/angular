@@ -1,0 +1,8 @@
+<!-- lista-desaparecidos.component.html -->
+<div *ngFor="let desaparecido of desaparecidos">
+    <div>{{ desaparecido.nome }}</div>
+    <div>{{ desaparecido.idade }}</div>
+    <div>{{ desaparecido.sexo }}</div>
+    <img [src]="desaparecido.fotoUrl" alt="{{ desaparecido.nome }}">
+  </div>
+  
